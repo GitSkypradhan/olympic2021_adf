@@ -1,10 +1,15 @@
 {
 	"name": "ls_raw_atheletes",
 	"properties": {
+		"parameters": {
+			"source_baseURL": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubusercontent.com/GitSkypradhan/olympic2021_adf/main/Athletes.csv",
+			"url": "@{linkedService().source_baseURL}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
