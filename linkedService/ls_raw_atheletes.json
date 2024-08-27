@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubusercontent.com/GitSkypradhan/olympic2021_adf/Athletes.csv",
+			"url": "https://raw.githubusercontent.com/GitSkypradhan/olympic2021_adf/main/Athletes.csv",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
