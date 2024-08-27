@@ -1,0 +1,32 @@
+{
+	"name": "ds_raw_olympic_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_raw_atheletes",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"source_baseURL": {
+					"value": "@dataset().base_url",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"base_url": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
