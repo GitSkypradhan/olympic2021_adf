@@ -1,0 +1,12 @@
+{
+	"name": "ls_raw_atheletes",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/GitSkypradhan/olympic2021_adf/Athletes.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
